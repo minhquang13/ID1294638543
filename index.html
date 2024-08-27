@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Hello World!</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-container {
+        background-color: white;
+        width: 400px;
+        padding: 20px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+      .login-header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .login-header img {
+        width: 200px;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .login-form input {
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 0 10px;
+        font-size: 16px;
+        border: 1px solid #dddfe2;
+        border-radius: 6px;
+      }
+      .login-form input:focus {
+        outline: none;
+        border-color: #1877f2;
+      }
+      .login-button {
+        background-color: #1877f2;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      .login-button:hover {
+        background-color: #165eab;
+      }
+      .forgot-password {
+        text-align: center;
+        margin-top: 15px;
+      }
+      .forgot-password a {
+        color: #1877f2;
+        text-decoration: none;
+      }
+      .forgot-password a:hover {
+        text-decoration: underline;
+      }
+      .separator {
+        text-align: center;
+        margin: 20px 0;
+        position: relative;
+      }
+      .separator:before,
+      .separator:after {
+        content: "";
+        height: 1px;
+        width: 40%;
+        background-color: #dddfe2;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .separator:before {
+        left: 0;
+      }
+      .separator:after {
+        right: 0;
+      }
+      .separator span {
+        background-color: white;
+        padding: 0 10px;
+        font-size: 14px;
+        color: #606770;
+      }
+      .create-account-button {
+        background-color: #42b72a;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+      .create-account-button:hover {
+        background-color: #36a420;
+      }
+    </style>
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-header">
+        <img
+          src="https://www.facebook.com/images/fb_icon_325x325.png"
+          alt="Facebook Logo"
+        />
+      </div>
+      <form class="login-form">
+        <input type="text" placeholder="Email hoặc số điện thoại" required />
+        <input type="password" placeholder="Mật khẩu" required />
+        <button type="submit" class="login-button">Đăng nhập</button>
+      </form>
+      <div class="forgot-password">
+        <a href="#">Quên mật khẩu?</a>
+      </div>
+      <div class="separator">
+        <span>hoặc</span>
+      </div>
+      <button class="create-account-button">Tạo tài khoản mới</button>
+    </div>
+  </body>
+</html>
